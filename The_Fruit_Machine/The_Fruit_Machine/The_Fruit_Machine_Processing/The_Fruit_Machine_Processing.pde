@@ -72,7 +72,7 @@ void draw() {
   /* TITLE */
   fill(255);
   textSize(65);
-  text("THE FRUITMACHINE", 30, 120);
+  text("THE FRUIT MACHINE", 30, 120);
   PFont font;
   font = createFont("Verdana Grassetto Corsivo",20);
   textFont(font);
@@ -81,7 +81,7 @@ void draw() {
   /* DRUM - PIANO MODE */
   if(drum){
       fill(#ffff00);
-      text("Drums",190,270);
+      text("Drums",199,270);
       fill(50,50,50);
       text("Instrument", 435, 270);
       
@@ -90,13 +90,13 @@ void draw() {
       text("KICK",100, 550);
       text("SNARE",180, 550);
       text("CLAP",260, 550);
-      text("HIT-HAT",330, 550);
+      text("HI-HAT",330, 550);
       text("BGLASS",420, 550);
       text("BELL",510, 550);
       text("LASER",580, 550);
   }else{
       fill(50,50,50);
-      text("Drums",190,270);
+      text("Drums",199,270);
       fill(#ffff00);
       text("Instrument", 435, 270);
       
@@ -221,11 +221,11 @@ void draw() {
   
   fill(255);
   textSize(15);
-  text("CLAP", 710,540);
+  text("CLAP", 710,550);
   
   fill(255);
   textSize(15);
-  text("HIT-HAT", 710,610);
+  text("HI-HAT", 710,610);
   
   /*Kick buttons loop*/
   if(kickArr[0] == 1){fill(0,0,255);} else{fill(255);}  rect(800, 400, 50, 50);
@@ -418,6 +418,3 @@ void mouseClicked() {
   if(mouseX>920 && mouseX <920+50 && mouseY>580 && mouseY <580+50 && loop == 0){hitHatArr[2] = onoff(hitHatArr[2]);}
   if(mouseX>980 && mouseX <980+50 && mouseY>580 && mouseY <580+50 && loop == 0){hitHatArr[3] = onoff(hitHatArr[3]);}
   }
-  
-
- 
