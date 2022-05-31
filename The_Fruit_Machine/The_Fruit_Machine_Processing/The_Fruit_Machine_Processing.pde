@@ -1,5 +1,3 @@
-/* THE FRUITMACHINE Processing code */
-
 /*===============================================================================*/
 // oscP5 is an OSC implementation for the programming environment processing.
 import oscP5.*;
@@ -87,14 +85,21 @@ void draw() {
       fill(50,50,50);
       text("Instrument", 435, 270);
       
-      fill(255);
+      
       textSize(15);
+      fill(#ff0000);
       text("KICK",100, 550);
+      fill(#ffff00);
       text("SNARE",180, 550);
+      fill(#ff00ff); //fucsia
       text("CLAP",260, 550);
+      fill(#0000ff); //blu
       text("HIT-HAT",330, 550);
+      fill(#00ffff); //celeste
       text("BGLASS",420, 550);
+      fill(#00ff00); //verde
       text("BELL",510, 550);
+      fill(255);
       text("LASER",580, 550);
   }else{
       fill(50,50,50);
@@ -102,14 +107,21 @@ void draw() {
       fill(#ffff00);
       text("Instrument", 435, 270);
       
-      fill(255);
+      
       textSize(15);
+      fill(#ff0000);
       text("C5",110, 550);
+      fill(#ffff00);
       text("D5",190, 550);
+      fill(#ff00ff); //fucsia
       text("E5",270, 550);
+      fill(#0000ff); //blu
       text("F5",350, 550);
+      fill(#00ffff); //celeste
       text("G5",430, 550);
+      fill(#00ff00); //verde
       text("A5",520, 550);
+      fill(255);
       text("B5",590, 550);
   }
   
@@ -213,19 +225,19 @@ void draw() {
   text("-", 1120,557);
   /* ===================== */
   
-  fill(255);
+  fill(#ff0000); //rosso
   textSize(15);
   text("KICK", 710,430);
   
-  fill(255);
+  fill(#ffff00); //giallo
   textSize(15);
   text("SNARE", 710,490);
   
-  fill(255);
+  fill(#ff00ff); //fucsia
   textSize(15);
   text("CLAP", 710,540);
   
-  fill(255);
+  fill(#0000ff); //blu
   textSize(15);
   text("HIT-HAT", 710,610);
   
